@@ -1,0 +1,20 @@
+# config for logcleanup
+#ReloadOnChange: reload this config file if file changes (default: false)
+ReloadOnChange:   false
+
+#Intervall: Scanintervall to check observed log files (not config-file!)
+Intervall:   "10m"
+
+## the following parameters can be changed without restarting the service, when ReloadOnChange is set to true
+
+#Keeplimmit: delete files in patterns which have not been modified for the Keeplimit time
+#Durations: "4s" Seconds, "5m" Minutes, "6h" Hours, "7D" Days, "1W" Week, "1M" Month, "1Y" Year
+#    or any combination "1D12h30m" (1 Day + 12 Hours + 30 Minutes)
+Keeplimit:   "5D"
+
+#Filepattern: check this files for modifications
+Filepattern:
+    - "c:\\logs\\*.log"
+    - "c:\\programs\\myprog\\logs\\*.log"
+    - "C:\\tmp\\prog1\\logs\\*.log"
+#    - "C:\\tmp\\*\\logs\\*.log"

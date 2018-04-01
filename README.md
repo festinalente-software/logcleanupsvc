@@ -1,6 +1,6 @@
 ## Motivation
 
-Logfile cleanup tool for Windows which should be kept only for a specific timeframe
+Logfile cleanup tool for Windows. Logfiles shall be kept only for a specific timespan
 
 Tool can run as a service and can be installed without additional tools
 
